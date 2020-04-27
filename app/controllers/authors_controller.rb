@@ -4,8 +4,8 @@ class AuthorsController < ApplicationController
   before_action :zero_authors_or_authenticated, only: %i[new create]
 
   def zero_authors_or_authenticated
-    (redirect_to root_path) if Author.count.zero? || current_user?
-    false if Author.count.zero? || current_user?
+    (redirect_to root_path) if Author.count.zero? || current_user
+    false if Author.count.zero? || current_user
   end
 
   # GET /authors
