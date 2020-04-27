@@ -5,6 +5,10 @@
     <li>
       <%= link_to tag.name, tag_path(tag), 
       class: 'tag_title'%>
+      <% if logged_in? %>
+        <%= link_to "delete", tag_path(tag), method: :delete %>
+      <% end %>
     </li>
+    
   <% end %>
 </ul>
