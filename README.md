@@ -1,24 +1,29 @@
-# README
+# BLOG APP WITH RAILS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project we are building a Blogger Application with Rails.
 
-Things you may want to cover:
+# Authors
 
-* Ruby version
+Marios Kanellopoulos
+- Github: [@mariosknl](https://github.com/mariosknl)
+- Twitter: [@mariosknl](https://twitter.com/MariosKnl)
+- Linkedln: [marios-kanellopoulos](https://www.linkedin.com/in/marios-kanellopoulos-a99332181/)
+- [![Mariosknl is available for hire!](http://hireable.me/mariosknl)](http://hireable.me/p/mariosknl)
 
-* System dependencies
 
-* Configuration
+Kubilay Caglayan
 
-* Database creation
+# Built With
 
-* Database initialization
+Ruby on Rails
+Git
+VS Code
 
-* How to run the test suite
+# Show your support
+Give a star if you like this project!
 
-* Services (job queues, cache servers, search engines, etc.)
+# Acknowledgments
+The Odin project for the project plan
 
-* Deployment instructions
-
-* ...
+# License
+This project is MIT licensed
