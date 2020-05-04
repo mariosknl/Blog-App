@@ -8,10 +8,11 @@
     </li>
     <% end %>
 </ul>
+<% unless logged_in? %>
+  <%= link_to "New User", new_author_path, class: "new_author new_article"%>
+  <%= link_to "Login", login_path, class: "new_article"%>
+<% end %> 
 <% if logged_in? %>
   <%= link_to "Tags", tags_path, class: "tags_tags new_article"%>
   <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
 <% end %>
-
-<%= link_to "Create New User", authors_path %>
-<%= link_to "Create New", author_sessions_path %>

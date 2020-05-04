@@ -5,3 +5,8 @@ div.field_with_errors input{border: 3px solid red}
   margin-right: 155px;
   background-color: white;
 }
+
+.new_author {
+  margin-right: 70px;
+  background-color: white;
+}
