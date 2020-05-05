@@ -3,12 +3,12 @@
 <%= form_tag author_sessions_path, method: :post do %>
   <div class="field">
     <%= label_tag :email %>
-    <%= text_field_tag :email %>
+    <%= text_field_tag :email, nil, placeholder: 'example@mail.com' %>
     <br/>
   </div>
   <div class="field">
     <%= label_tag :password %>
-    <%= password_field_tag :password %>
+    <%= password_field_tag :password, nil, placeholder: 'admin' %>
     <br/>
   </div>
   <div class="actions">

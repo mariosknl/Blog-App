@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-#Author.create(username: "admin", email: "example@mail.com", password: "admin" )
+Author.create(username: "admin", email: "example@mail.com", password: "admin" )
 
 bands = {
   'Led Zeppelin' => 'Stairway to Heaven',
