@@ -16,10 +16,10 @@ Kubilay Caglayan
 
 # How to Run Code
 - clone repository
-- bundle install
-- rails db:migrate
-- rails server
-- address bar: localhost:3000 will take you to the Index page.
+- `bundle install`
+- `rails db:migrate`
+- `rails server`
+- address bar: `localhost:3000` will take you to the Index page.
 
 # Usage
 - You can create account.
