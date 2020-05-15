@@ -15,12 +15,14 @@ ActiveRecord::Schema.define(version: 2020_04_26_105517) do
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "body"
+    t.integer "author_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image_file_name"
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
+    t.index ["author_id"], name: "index_articles_on_author_id"
   end
 
   create_table "attachments", force: :cascade do |t|

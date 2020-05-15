@@ -7,18 +7,29 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Author.create(username: "admin", email: "example@mail.com", password: "admin" )
+Author.create(username: "bdmin", email: "a@mail.com", password: "admin" )
 
 bands = {
-  'Led Zeppelin' => 'Stairway to Heaven',
-  'Pink Floyd' => 'Comfortably Numb',
-  'Radiohead' => 'Karma Police',
-  'Black Sabbath' => 'War Pigs',
-  'Black Sabbath' => 'Paranoid',
-  'Metallica' => 'Enter Sandman'
+  'Led Zeppelin' => {'Stairway to Heaven' => ["music", "rock", "fav"]},
+  'Pink Floyd' => {'Comfortably Numb' => ["music", "psychedelic", "fav"]},
+  'Radiohead' => {'Karma Police' => ["music", "alternative"]},
+  'Black Sabbath' => {'War Pigs' => ["music", "metal"]},
+  'Black Sabbath' => {'Paranoid' => ["music", "metal"]},
+  'Metallica' => {'Enter Sandman' => ["music", "heavy metal"]}
 }
 
-bands.each do |band, song|
-  Article.create(title: band, body: song)
+bands.each do |band, song_tags|
+  song_tags.each do |song, tags|
+    article_temp = Article.create(title: band, body: song, author_id: [1,2].sample)
+    tags.each do |tag|
+      unless Tag.where(name: tag).exists?
+        tag_temp = Tag.create(name: tag)
+      else
+        tag_temp = Tag.where(name: tag)[0]
+      end
+      Tagging.create(tag_id: tag_temp.id, article_id: article_temp.id)
+    end
+  end
 end
 
 names = ['Kubilay','Marios','Jamilia','Teo','David Gilmour', 'Jimmy Page']
