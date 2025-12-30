@@ -183,7 +183,7 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
       terrapin (~> 0.6.0)
-    pg (1.6.2)
+    pg (1.6.3)
     psych (5.2.6)
       date
       stringio
