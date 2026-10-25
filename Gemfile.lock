@@ -109,7 +109,7 @@ GEM
       logger
     faraday-net_http (3.4.2)
       net-http (~> 0.5)
-    ffi (1.17.3)
+    ffi (1.17.4)
     globalid (1.3.0)
       activesupport (>= 6.1)
     hashie (5.0.0)
@@ -127,7 +127,7 @@ GEM
     json (2.19.9)
     jwt (2.10.2)
       base64
-    listen (3.10.0)
+    listen (3.10.1)
       logger
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -339,7 +339,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   jbuilder (~> 2.7)
-  listen (>= 3.0.5, < 3.10.1)
+  listen (>= 3.0.5, < 3.10.2)
   paperclip
   pg
   puma (~> 8.0)
